@@ -84,9 +84,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Cʟɪᴄᴋ oɴ 'Jᴏɪɴ Tʜɪs Cʜᴀɴɴᴇʟ' Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ Aɴᴅ Jᴏɪɴ Tʜᴇ Cʜᴀɴɴᴇʟ Aɴᴅ Tʜᴇɴ Pʀᴇss 'Tʀʏ Aɢᴀɪɴ' Bᴜᴛᴛᴏɴ Tᴏ Gᴇᴛ Tʜᴇ Mᴏᴠɪᴇ‌‌ 
-
-താഴെ കാണുന്ന 'JOIN THIS CHANNEL' എന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയ്ത് ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം 'TRY AGAIN' എന്ന ബട്ടണിൽ അമർത്തിയാൽ സിനിമ ലഭിക്കുന്നതാണ്**",
+            text="**Cʟɪᴄᴋ oɴ 'Jᴏɪɴ Tʜɪs Cʜᴀɴɴᴇʟ' Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ Aɴᴅ Jᴏɪɴ Tʜᴇ Cʜᴀɴɴᴇʟ Aɴᴅ Tʜᴇɴ Pʀᴇss 'Tʀʏ Aɢᴀɪɴ' Bᴜᴛᴛᴏɴ Tᴏ Gᴇᴛ Tʜᴇ Mᴏᴠɪᴇ‌‌\n\nതാഴെ കാണുന്ന 'JOIN THIS CHANNEL' എന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയ്ത് ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം 'TRY AGAIN' എന്ന ബട്ടണിൽ അമർത്തിയാൽ സിനിമ ലഭിക്കുന്നതാണ്**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
