@@ -269,20 +269,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group!!", quote=True)
-                    return await query.answer('♥️ Love @LazyDeveloper ♥️')
+                    return await query.answer('Lᴏᴀᴅɪɴɢ... Pʟᴇᴀsᴇ Wᴀɪᴛ')
             else:
                 await query.message.edit_text(
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+                return await query.answer('Lᴏᴀᴅɪɴɢ... Pʟᴇᴀsᴇ Wᴀɪᴛ')
 
         elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
         else:
-            return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+            return await query.answer('Lᴏᴀᴅɪɴɢ... Pʟᴇᴀsᴇ Wᴀɪᴛ')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
@@ -307,7 +307,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("That's not for you sona!", show_alert=True)
+                await query.answer("Dᴜᴅᴇ, Tʜɪs Mᴀssᴀɢᴇ Is Nᴏᴛ Fᴏʀ Yᴏᴜ...!", show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
@@ -336,7 +336,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+        return await query.answer('Lᴏᴀᴅɪɴɢ... Pʟᴇᴀsᴇ Wᴀɪᴛ')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -357,7 +357,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+        return await query.answer('Lᴏᴀᴅɪɴɢ... Pʟᴇᴀsᴇ Wᴀɪᴛ')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -380,7 +380,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+        return await query.answer('Lᴏᴀᴅɪɴɢ... Pʟᴇᴀsᴇ Wᴀɪᴛ')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -398,8 +398,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('♥️ Thank You LazyDeveloper ♥️')
-    elif query.data == "backcb":
+        return await query.answer('Lᴏᴀᴅɪɴɢ... Pʟᴇᴀsᴇ Wᴀɪᴛ')
         await query.answer()
 
         userid = query.from_user.id
@@ -409,7 +408,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+            return await query.answer('Lᴏᴀᴅɪɴɢ... Pʟᴇᴀsᴇ Wᴀɪᴛ')
         buttons = []
         for groupid in groupids:
             try:
@@ -485,7 +484,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("Mere saamne jyada smart nhi banne ka sona 😒", show_alert=True)
+            await query.answer("Dᴜᴅᴇ, Yᴏᴜ'ʀᴇ Nᴏᴛ Jᴏɪɴᴇᴅ Tʜᴇ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ. Pʟᴇᴀsᴇ Cʟɪᴄᴋ Tʜɪs Bᴜᴛᴛᴏɴ Aғᴛᴇʀ Jᴏɪɴ Tʜᴇ Cʜᴀɴɴᴇʟ.", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -789,7 +788,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+            return await query.answer('Lᴏᴀᴅɪɴɢ... Pʟᴇᴀsᴇ Wᴀɪᴛ')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -836,7 +835,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('♥️ Thank You LazyDeveloper ♥️')
+    await query.answer('Lᴏᴀᴅɪɴɢ... Pʟᴇᴀsᴇ Wᴀɪᴛ')
 
 
 async def auto_filter(client, msg, spoll=False):
@@ -897,7 +896,7 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"🗓 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton(text="Nᴇxᴛ", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
@@ -938,7 +937,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Baby, Here is what i found for your query {search}"
+        cap = f"<b>Sᴇʟᴇᴄᴛ Yᴏᴜʀ Dᴇsɪʀᴇᴅ Fɪʟᴇ Fʀᴏᴍ Bᴇʟᴏᴡ\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ : {message.from_user.mention}\n\nQᴜᴇʀʏ : {search}\n\nt.me/Cinemagram_Links</b>"
     if imdb and imdb.get('poster'):
         try:
             z = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
