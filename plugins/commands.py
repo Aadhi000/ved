@@ -45,13 +45,13 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('✙ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ ✙', url='https://t.me/+EVo8pOgRL083NTVl')
             ],[
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('', url='https://t.me/LazyDeveloper'),
+            InlineKeyboardButton('', url='https://t.me/LazyDeveloper')
             ],[
-            InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
+            InlineKeyboardButton('', url='https://t.me/LazyDeveloper'),
+            InlineKeyboardButton('', url='https://t.me/LazyDeveloper')
             ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
+            InlineKeyboardButton('', url='https://youtube.com/LazyDeveloper')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
