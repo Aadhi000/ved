@@ -84,23 +84,25 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Cʟɪᴄᴋ oɴ 'Jᴏɪɴ Tʜɪs Cʜᴀɴɴᴇʟ' Bᴜᴛᴛᴏɴ Bᴇʟᴏᴡ Aɴᴅ Jᴏɪɴ Tʜᴇ Cʜᴀɴɴᴇʟ Aɴᴅ Tʜᴇɴ Pʀᴇss 'Tʀʏ Aɢᴀɪɴ' Bᴜᴛᴛᴏɴ Tᴏ Gᴇᴛ Tʜᴇ Mᴏᴠɪᴇ‌‌ 
+
+താഴെ കാണുന്ന 'JOIN THIS CHANNEL' എന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയ്ത് ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം 'TRY AGAIN' എന്ന ബട്ടണിൽ അമർത്തിയാൽ സിനിമ ലഭിക്കുന്നതാണ്**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✙ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ ✙', url='https://t.me/+EVo8pOgRL083NTVl')
             ],[
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('Nᴇᴡ Mᴏᴠɪᴇs', url='https://t.me/CMG_OTT'),
+            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CMG_Updates')
             ],[
-            InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
-        ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
-        ]]
+            InlineKeyboardButton('Bᴀᴄᴋᴜᴘ Gʀᴏᴜᴘ', url='https://t.me/+dY5dKCCnZxFhM2Q1'),
+            InlineKeyboardButton('Cʜᴀɴɴᴇʟ Lɪɴᴋs', url='https://t.me/Cinemagram_Links')
+            ],[
+            InlineKeyboardButton('Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ', url='https://t.me/CMG_Adminchatbot')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
