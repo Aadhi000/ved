@@ -1,11 +1,9 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ Dᴇᴇᴘᴀᴋ, Mʏsᴇʟғ  Fɪʟᴏ ✨,
 
-I Aᴍ Jᴜsᴛ A Sɪᴍᴘʟᴇ Aᴜᴛᴏ + Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ Bᴏᴛ Mᴀᴅᴇ Fᴏʀ Cɪɴᴇᴍᴀɢʀᴀᴍ Gʀᴏᴜᴘ
+I Aᴍ Jᴜsᴛ A Sɪᴍᴘʟᴇ Aᴜᴛᴏ + Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ Bᴏᴛ Mᴀᴅᴇ Fᴏʀ Cɪɴᴇᴍᴀɢʀᴀᴍ Gʀᴏᴜᴘ.
 
-I Cᴀɴ Aʟsᴏ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs Hᴇʀᴇ. Sᴇɴᴅ Tʜᴇ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ Oғ Tʜᴇ Mᴏᴠɪᴇ Yᴏᴜ Wᴀɴᴛ Aɴᴅ Wᴀɪᴛ Sᴏᴍᴇ Tɪᴍᴇ [ Iғ Yᴏᴜ Dᴏɴ'ᴛ Kɴᴏᴡ Tʜᴇ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ, Cᴏᴘʏ Iᴛ Fʀᴏᴍ Gᴏᴏɢʟᴇ Aɴᴅ Sᴇɴᴅ Tᴏ Mᴇ ]
-
-Mᴀᴋᴇ Sᴜʀᴇ Yᴏᴜ Hᴀᴠᴇ Jᴏɪɴᴇᴅ Aʟʟ Tʜᴇ Cʜᴀɴɴᴇʟs Bᴇʟᴏᴡ Bᴇғᴏʀᴇ Rᴇǫᴜᴇsᴛɪɴɢ A Mᴏᴠɪᴇ. Oɴʟʏ Tʜᴇɴ Wɪʟʟ Yᴏᴜ Gᴇᴛ Tʜᴇ Rᴇsᴜʟᴛ</b>"""
+Mᴀᴋᴇ Sᴜʀᴇ Yᴏᴜ Hᴀᴠᴇ Jᴏɪɴᴇᴅ Aʟʟ Tʜᴇ Cʜᴀɴɴᴇʟs Bᴇʟᴏᴡ Bᴇғᴏʀᴇ Rᴇǫᴜᴇsᴛɪɴɢ A Mᴏᴠɪᴇ.</b>"""
     LZTHMB_TEXT = """Hello {},
 Glad to see you here. It seems that you really love <a href=https://t.me/LazyDeveloperr >LazyDeveloper's</a> work.\n\n<b>Thumbnail extracting</b> feature will be available soon, please join <a href=https://t.me/LazyDeveloper>Dev Channel</a> and stay tuned for next <a href=https://t.me/LazyDeveloper>update</a>.\n\n  🐞 Report Bug here: <a href=http://t.me/LazyDeveloperSupport>LazyDev Support</a>
     """
