@@ -45,8 +45,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('✙ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ ✙', url='https://t.me/+EVo8pOgRL083NTVl')
             ],[
-            InlineKeyboardButton('', url='https://t.me/LazyDeveloper'),
-            InlineKeyboardButton('', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('Nᴇᴡ Mᴏᴠɪᴇs', url='https://t.me/CMG_OTT'),
+            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CMG_Updates')
             ],[
             InlineKeyboardButton('', url='https://t.me/LazyDeveloper'),
             InlineKeyboardButton('', url='https://t.me/LazyDeveloper')
