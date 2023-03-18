@@ -48,8 +48,8 @@ async def start(client, message):
             InlineKeyboardButton('Nᴇᴡ Mᴏᴠɪᴇs', url='https://t.me/CMG_OTT'),
             InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CMG_Updates')
             ],[
-            InlineKeyboardButton('', url='https://t.me/LazyDeveloper'),
-            InlineKeyboardButton('', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('Bᴀᴄᴋᴜᴘ Gʀᴏᴜᴘ', url='https://t.me/+dY5dKCCnZxFhM2Q1'),
+            InlineKeyboardButton('Cʜᴀɴɴᴇʟ Lɪɴᴋs', url='https://t.me/Cinemagram_Links')
             ],[
             InlineKeyboardButton('', url='https://youtube.com/LazyDeveloper')
             ]]
