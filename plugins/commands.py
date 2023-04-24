@@ -43,12 +43,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('✙ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ ✙', url='https://t.me/+EVo8pOgRL083NTVl')
+            InlineKeyboardButton('✙ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ ✙', url='https://t.me/+o_9txeiRDbJhYjY1')
             ],[
-            InlineKeyboardButton('Nᴇᴡ Mᴏᴠɪᴇs', url='https://t.me/CMG_OTT'),
+            InlineKeyboardButton('Nᴇᴡ Mᴏᴠɪᴇs', url='https://t.me/+5ihzUQU7rmA5Mjc1'),
             InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CMG_Updates')
             ],[
-            InlineKeyboardButton('Bᴀᴄᴋᴜᴘ Gʀᴏᴜᴘ', url='https://t.me/+dY5dKCCnZxFhM2Q1'),
+            InlineKeyboardButton('Bᴀᴄᴋᴜᴘ Gʀᴏᴜᴘ', url='https://t.me/+EA0BX9M2a7o0NjI1'),
             InlineKeyboardButton('Cʜᴀɴɴᴇʟ Lɪɴᴋs', url='https://t.me/Cinemagram_Links')
             ],[
             InlineKeyboardButton('Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ', url='https://t.me/CMG_Adminchatbot')
@@ -91,12 +91,12 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('✙ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ ✙', url='https://t.me/+EVo8pOgRL083NTVl')
+            InlineKeyboardButton('✙ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ ✙', url='https://t.me/+o_9txeiRDbJhYjY1')
             ],[
-            InlineKeyboardButton('Nᴇᴡ Mᴏᴠɪᴇs', url='https://t.me/CMG_OTT'),
+            InlineKeyboardButton('Nᴇᴡ Mᴏᴠɪᴇs', url='https://t.me/+5ihzUQU7rmA5Mjc1'),
             InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CMG_Updates')
             ],[
-            InlineKeyboardButton('Bᴀᴄᴋᴜᴘ Gʀᴏᴜᴘ', url='https://t.me/+dY5dKCCnZxFhM2Q1'),
+            InlineKeyboardButton('Bᴀᴄᴋᴜᴘ Gʀᴏᴜᴘ', url='https://t.me/+EA0BX9M2a7o0NjI1'),
             InlineKeyboardButton('Cʜᴀɴɴᴇʟ Lɪɴᴋs', url='https://t.me/Cinemagram_Links')
             ],[
             InlineKeyboardButton('Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ', url='https://t.me/CMG_Adminchatbot')
